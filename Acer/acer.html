@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        *{padding: 0;margin: 0;border: 0;font-family:Acer Font Icon;}
+        a{text-decoration: none;}
+        ul{list-style: none;}
+        .all{width: 1349px;height: 2207px;}
+        .aa{overflow: hidden;float: left;}
+        .about{width: 1349px;height: 549px;background-color: #424242;position: relative;}
+        .about ul{float: left;width: 307.25px;height: 349px;padding-left: 30px;}
+        .aboutp{width: 307.25px;height: 86px;line-height: 86px;color: #ffffff;font-size: 14px;}
+        .bottom{width: 1349px;height: 216px;background-color: #202020;position: relative;}
+        #bigimg{width: 1349px;height: 560px;background-image:url(images/datu1.gif);/*transition:background-image 2s;*/}
+        .computer{width: 1349px;height: 514px;}
+        .cpu{width: 1349.1px;height: 260px;overflow: hidden;color: white;}
+        .compdiv1{width: 337px;height: 454px;float: left;margin-top: 30px ;}
+        .compdiv1:hover{color:black;background-color: #f5f1f1;}
+        .compdiv1 img{width: 280px;height: 280px;margin: 47px 28px 0 28px;transform:scale(0.95);transition: transform 0.3s;}
+        .compdiv1 img:hover{transform:scale(1,1);transition: transform 0.3s;}
+        .compdiv1 p{width: 337px;height: 118px;line-height: 118px;text-align: center;font-size: 24px;color: #4c4c4c;}
+        .compdiv1 p:hover{color: black;}
+        .cpudiv1{width: 337.25px;height: 260px;float: left;background: url(images/x1.jpg) center;background-size: cover;overflow: hidden;transform: scale(1);transition: transform 1s;position: relative;}
+        .cpudiv2{width: 337.35px;height: 260px;float: left;background: url(images/x2.jpg) center;background-size: cover;overflow: hidden;transform: scale(1);transition: transform 1s;}
+        .cpudiv3{width: 337.25px;height: 260px;float: left;background: url(images/x3.jpg) center;background-size: cover;transform: scale(1);transition: transform 1s;}
+        .cpudiv4{width: 337.25px;height: 260px;float: left;background: url(images/x4.jpg) center;background-size: cover;transform: scale(1);transition: transform 1s;}
+        .cpudiv1:hover{transform: scale(1.1);transition: transform 1s;}
+        .cpudiv2:hover{transform: scale(1.1);transition: transform 1s;}
+        .cpudiv3:hover{transform: scale(1.1);transition: transform 1s;}
+        .cpudiv4:hover{transform: scale(1.1);transition: transform 1s;}
+    	#yd1{width: 337.25px;height: 260px;position:absolute;left: 40px;top:200px;/*display: none;*/transition: top 0.5s;}
+    	#yd2{width: 337.25px;height: 260px;position:absolute;left: 40px;top:200px;/*display: none;*/transition: top 0.5s;}
+    	#yd3{width: 337.25px;height: 260px;position:absolute;left: 40px;top:200px;/*display: none;*/transition: top 0.5s;}
+    	#yd4{width: 337.25px;height: 260px;position:absolute;left: 40px;top:200px;/*display: none;*/transition: top 0.5s;}
+    	#touming{display: none;width: 337.25px;height: 260px;opacity: 0.5;position: absolute;left: 0;top:0; background-color:#202020;/*transition:opacity 1s;*/}
+    	#touming1{display: none;width: 337.25px;height: 260px;opacity: 0.5;position: absolute;left: 0;top:0; background-color:#202020;/*transition:opacity 1s;*/}
+    	#touming2{display: none;width: 337.25px;height: 260px;opacity: 0.5;position: absolute;left: 0;top:0; background-color:#202020;/*transition:opacity 1s;*/}
+    	#touming3{display: none;width: 337.25px;height: 260px;opacity: 0.5;position: absolute;left: 0;top:0; background-color:#202020;/*transition:opacity 1s;*/}
+       /* .li1:before{content: "\e824";}*/
+       .fdiv1{width: 345px;height: 350px;border-right:#eeeeee solid 1px;float: left;}
+       .fdiv2{width: 574px;height: 350px;border-right:#eeeeee solid 1px;float: left;}
+       .fdiv2{color:#626262; }
+       .fdiv2 h1{margin-left: 18px;font-weight: normal;font-size: 25px;line-height: 62px;}
+       .fdiv2 p{margin-left: 18px;font-weight: normal;line-height: 25px;font-size: 13.3px;}
+       .fdiv1 li:hover{color:black;}
+		.fdiv1 li{height: 43px;line-height: 43px;}
+		.fdiv1 ul{margin:26px 0 0 30px;font-size: 12px;font-weight: bolder;}
+		.gethelp{width: 104px;height: 40px;line-height: 40px;margin-left:18px;margin-top:30px;text-align: center;background-color: #eeeeee;border-radius: 6px;}
+		.gethelp:hover{background-color: #dad5d5;color:black; }
+		.gshang{width: 520px;height: 216px;/*background-color: red;*/margin-left:30px; }
+		.gshang img{margin-top: 30px;margin-bottom: 10px;}
+		.gshang p{height: 18px;line-height: 18px;font-size: 12px;color: #909090;}
+		.imdiv{width: 367px;height: 143px;position: absolute;left:30px;top: 352px;/*background-color: red;*/}
+		.imdivp1{color: #ffffff;font-size: 14px;height: 43px;line-height: 43px;}
+		.imdivp2{width: 276px;height: 50px;line-height: 50px;color: #8ea18e;font-size: 13px;}
+		.imdivp2 a{color: #d9d9d9;font-size: 13px;text-decoration: underline;}
+		.imdivp2 a:hover{color:white;}
+		.inp1{width: 240px;height: 40px;border:#9e9e9e solid 1px;background-color: #616161; padding-left: 10px;color: #9e9e9e;font-size: 14px;}
+		.inp2{width: 75px;height: 42px;border-radius: 3px;position: relative;top: 1px;}
+		.inp2:hover{width: 75px;height: 42px;border-radius: 3px;position: relative;top: 1px;background-color: #d9d9d9;transition: background-color 1s;}
+		.img1{width: 110px;height: 50px;position: absolute;left: 625px;top: -5px;}
+		#img2{position: absolute;left: 1270px;top: 15px;}
+       .li1{float:left;width: 114px;height: 108px;line-height: 108px;position: relative;}
+       .li1 img{width: 18px;height: 14px;position: absolute;left:-40px;top:8px;}
+       .li2{float:left;width: 78px;height: 108px;line-height: 108px;position: relative;}
+       .li2 img{width: 16px;height: 13px;position: absolute;left:-37px;top:8px;}
+		.nav{width: 1349px;height: 108px;color: #999999;font-size: 13.3px;font-weight: bolder;}
+		.nav img{margin:40px 0 40px 38px;float:left;}
+		.l{line-height: 34px;height: 34px;font-size: 12px;color: #a1a1a1;}
+		.l:hover{line-height: 34px;height: 34px;font-size: 12px;color: #d9d9d9;}
+		.li11{width: 86px;height: 108px;line-height: 108px;float:left;position: relative;}
+		.li11:hover{color:black;}
+		.li1:hover{color:black;}
+		.li2:hover{color:black;}
+		.yc1 li:hover{color:black;}
+		.yc1 li{height: 43px;line-height: 43px;}
+		.yc1 ul{margin:26px 0 0 30px;}
+		.top-ul1{width: 344px;height: 108px;line-height: 108px;margin-left: 110px;float:left;}
+		.top-ul2{width: 193px;height: 108px;line-height: 108px;float:right;}
+		.xiao{height: 72px;line-height: 72px;text-align: center;}
+		.xiaoy1{width: 13px;height: 13px;position: absolute;left:649px;top:584px;}
+		.xiaoy2{width: 13px;height: 13px;position: absolute;left:669.3px;top:584px;}
+		.xiaoy3{width: 13px;height: 13px;position: absolute;left:690px;top:584px;}
+		#yincang{display: none;width: 1349px;height: 476px;position: absolute;left:-230px;top:108px;border:#eeeeee solid 1px;color:#999999;font-size: 15px; font-weight: lighter;background-color: white;}
+		#yincang-1{display: none;width: 1349px;height: 476px;position: absolute;left:-316px;top:108px;border:#eeeeee solid 1px;color:#999999; font-size: 15px;font-weight: lighter;background-color: white;}
+		#yincang-2{display: none;width: 1349px;height: 350px;position: absolute;left:-488px;top:108px;border:#eeeeee solid 1px;color:#999999; font-size: 15px;font-weight: lighter;background-color: white}
+		.yc1{width: 345px;height: 476px;float: left;border-right:#eeeeee solid 1px; font-size: 12px;font-weight: bolder;}
+		.yc2{width: 285px;height: 238px;position: absolute;left:346px;top: 0;border-right:#eeeeee solid 1px;border-bottom:#eeeeee solid 1px;}
+		.yc3{width: 285px;height: 238px;position: absolute;left:346px;top:238px;border-right:#eeeeee solid 1px;}
+		.yc4{width: 287px;height: 238px;position: absolute;left:633px;top:238px;border-right:#eeeeee solid 1px;}
+		.yc5{width: 287px;height: 238px;position: absolute;left:633px;top: 0;border-right:#eeeeee solid 1px;border-bottom:#eeeeee solid 1px;}
+		.yc6{width: 427px;height: 238px;position: absolute;left:920px;top: 0;border-bottom:#eeeeee solid 1px;}
+		.yc7{width: 427px;height: 238px;position: absolute;left:920px;top:238px;}
+		.yc2 img{margin: 20px 70px 0 70px;}
+		.yc3 img{margin: 20px 70px 0 70px;}
+		.yc4 img{margin: 20px 70px 0 70px;}
+		.yc5 img{margin: 20px 70px 0 70px;}
+		.yc6 img{margin: 10px 120px 0 120px;width: 190px;height: 155px;}
+		.yc7 img{margin: 10px 120px 0 120px;width: 190px;height: 155px;}
+		.yc2:hover,.yc3:hover,.yc4:hover,.yc5:hover,.yc6:hover,.yc7:hover{color:black;background-color:#ede9e9; }
+		.aa p{font-size: 14px;}
+		.iii{margin: 50px 524px 88px 700px;}
+        </style>
+        <script>
+        	function change(a,b){
+        		document.getElementById(a).style.display=b;
+        	}
+        	function changeimg(a,b){
+        	
+        		document.getElementById(a).style.backgroundImage='url('+b+')';
+        		// else if(b==2)
+        		// 	document.getElementById(a).style.backgroundImage="url(images/datu2.gif)";
+        		// else if(b==3)
+        		// 	document.getElementById(a).style.backgroundImage="url(images/datu3.gif)";
+        	}
+        	function change1(a,b){
+        		document.getElementById(a).src=b;
+        	}
+        	function yd(a,b){
+        		document.getElementById(a).style.top=b;
+        	}
+        </script>
+    </head>
+    <body>
+    <div class="all">
+    	<div class="nav">
+    		<a href="http://www.sina.com" title="acer"><img src="images/logo.gif"></a>
+    		<ul class="top-ul1">
+    			<li class="li11" onmouseover="change('yincang','block')" onmouseout="change('yincang','none')">家庭 ∨
+					<div id="yincang">
+    					<div class="yc1">
+    						<ul>
+    							<li>笔记本电脑</li>
+    							<li>台式机</li>
+    							<li>平板电脑</li>
+    							<li>显示器</li>
+    							<li>投影机</li>
+    						</ul>
+    					</div>
+    					<div class="yc2">
+    						<img src="images/E5.png" alt="">
+    						<div class="xiao">Aspire E</div>
+    					</div>
+    					<div class="yc3">
+    						<img src="images/TC.png" alt="">
+    						<div class="xiao">Aspire TC</div>
+    					</div>
+    					<div class="yc4">
+    						<img src="images/Z35.png" alt="">
+    						<div class="xiao">Predator Z35</div>
+    					</div>
+    					<div class="yc5">
+    						<img src="images/V17.png" alt="">
+    						<div class="xiao">Aspire V Nitro</div>
+    					</div>
+    					<div class="yc6">
+    						<img src="images/Pr.svg" alt="">
+    						<div class="xiao">Predator</div>
+    					</div>
+    					<div class="yc7">
+    						<img src="images/Software.svg" alt="">
+    						<div class="xiao">软件</div>
+    					</div>
+    				</div>
+    			</li>
+    			<li class="li11" onmouseover="change('yincang-1','block')" onmouseout="change('yincang-1','none')">办公 ∨
+    				<div id="yincang-1">
+    					<div class="yc1">
+    						<ul>
+    							<li>笔记本电脑</li>
+    							<li>台式机</li>
+    							<li>工作站</li>
+    							<li>瘦客户端</li>
+    							<li>显示器</li>
+    							<li>投影机</li>
+    							<li>服务器</li>
+    						</ul>
+    					</div>
+    					<div class="yc2">
+    						<img src="images/zs.png" alt="">
+    						<div class="xiao">TravelMate P6</div>
+    					</div>
+    					<div class="yc3">
+    						<img src="images/zx.png" alt="">
+    						<div class="xiao">B6</div>
+    					</div>
+    					<div class="yc4">
+    						<img src="images/cs.png" alt="">
+    						<div class="xiao">Shangqi N</div>
+    					</div>
+    					<div class="yc5">
+    						<img src="images/cs.png" alt="">
+    						<div class="xiao">TravelMate P4</div>
+    					</div>
+    					<div class="yc6">
+    						<img src="images/ys.svg" alt="">
+    						<div class="xiao">协助方式</div>
+    					</div>
+    					<div class="yc7">
+    						<img src="images/yx.svg" alt="">
+    						<div class="xiao">工具箱</div>
+    					</div>
+    				</div>
+    			</li>
+    			<li class="li11">BYOC</li>
+    			<li class="li11" onmouseover="change('yincang-2','block')" onmouseout="change('yincang-2','none')">服务支持 ∨
+					<div id="yincang-2">
+						<div class="fdiv1">
+							<ul>
+    							<li>保修信息</li>
+    							<li>重要信息公告</li>
+    							<li>驱动程序和使用手册</li>
+    							<li>获取支持</li>
+    							<li>现在预约</li>
+    						</ul>
+						</div>
+						<div class="fdiv2">
+							<h1>获取 Acer 宏碁的相关帮助。</h1>
+							<p>识别您的 Acer宏碁产品后，我们将为您提供下载、支持及其他在线资源，帮助您充分利用您的Acer宏碁产品。</p>
+							<div class="gethelp">获取支持</div>
+						</div>
+					</div>
+    			</li>
+    		</ul>
+    		<ul class="top-ul2">
+    			<li onmouseover="change1('img12','images/rentou4.gif')" onmouseout="change1('img12','images/rentou.gif')" class="li1"><img id="img12" src="images/rentou.gif" alt="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMY ACER</li>
+    			<li onmouseover="change1('img13','images/fdj2.gif')" onmouseout="change1('img13','images/fdj.gif')"class="li2"><img id="img13" src="images/fdj.gif" alt="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp搜索</li>
+    		</ul>
+    	</div>
+    	<div id="bigimg">
+    		<div class="xiaoy1" onclick="changeimg('bigimg','images/datu1.gif')"></div>
+    		<div class="xiaoy2" onclick="changeimg('bigimg','images/datu2.gif')"></div>
+    		<div class="xiaoy3" onclick="changeimg('bigimg','images/datu3.gif')"></div>
+    	</div>
+    	<div class="computer">
+    		<div class="compdiv1">
+    			<img src="images/d1.png" alt="">
+    			<p>Predator掠夺者 G9</p>
+        	</div>
+    		<div class="compdiv1">
+    			<img src="images/d2.png" alt="">
+    			<p>Predator 掠夺者8</p>
+    		</div>
+    		<div class="compdiv1">
+    			<img src="images/d3.png" alt="">
+    			<p>Predator 掠夺者G6</p>
+    		</div>
+    		<div class="compdiv1">
+    			<img src="images/d4.png" alt="">
+    			<p>Predator 掠夺者Z35</p>
+    		</div>
+    	</div>
+    	<div class="cpu">
+    		<div class="aa" onmouseover="change('touming','block')" onmouseout="change('touming','none')"><div class="cpudiv1" onmouseover="yd('yd1','20px')" onmouseout="yd('yd1','200px')">
+    		<div id="touming"></div>
+    		<div id="yd1">
+    			<br>
+    			<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp立即购买 Acer</h2><br>
+    			<p>Acer 专为 Windows 10 量身打造，适用<br>于所有外形和尺寸的设备，为您带来非<br>凡个人体验。</p>
+    			
+    		</div></div></div>
+    		<div class="aa" onmouseover="change('touming1','block')" onmouseout="change('touming1','none')"><div class="cpudiv2" onmouseover="yd('yd2','20px')" onmouseout="yd('yd2','200px')">
+    		<div id="touming1"></div>
+    		<div id="yd2">
+    			<br>
+    			<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp立即购买 Acer</h2><br>
+    			<p>Acer 专为 Windows 10 量身打造，适用<br>于所有外形和尺寸的设备，为您带来非<br>凡个人体验。</p>
+    			
+    		</div></div></div>
+    		<div class="aa" onmouseover="change('touming2','block')" onmouseout="change('touming2','none')"><div class="cpudiv3" onmouseover="yd('yd3','20px')" onmouseout="yd('yd3','200px')">
+    		<div id="touming2"></div>
+    		<div id="yd3">
+    			<br>
+    			<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp立即购买 Acer</h2><br>
+    			<p>Acer 专为 Windows 10 量身打造，适用<br>于所有外形和尺寸的设备，为您带来非<br>凡个人体验。</p>
+    			
+    		</div></div></div>
+    		<div class="aa" onmouseover="change('touming3','block')" onmouseout="change('touming3','none')"><div class="cpudiv4" onmouseover="yd('yd4','20px')" onmouseout="yd('yd4','200px')">
+    		<div id="touming3"></div>
+    		<div id="yd4">
+    			<br>
+    			<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp立即购买 Acer</h2><br>
+    			<p>Acer 专为 Windows 10 量身打造，适用<br>于所有外形和尺寸的设备，为您带来非<br>凡个人体验。</p>
+    			
+    		</div></div></div>
+    		<div class="aa"><div class="cpudiv2"><div id="yd2"></div></div></div>
+    		<div class="aa"><div class="cpudiv3"><div id="yd3"></div></div></div>
+    		<div class="aa"><div class="cpudiv4"><div id="yd4"></div></div></div>
+    	</div>
+   	 	<div class="about">
+   			<ul >
+   				<li class="aboutp">关于宏碁</li>
+   	 			<li class="l">联系我们</li>
+   	 			<li class="l">投资者关系</li>
+   	 			<li class="l">新闻</li>
+   	 			<li class="l">企业社会责任</li>
+   	 			<li class="l">招兵买马</li>
+   	 			<li class="l">奖项</li>
+   	 		</ul>
+   	 		<ul>
+   	 		   <li class="aboutp">服务</li>
+   	 			<li class="l">驱动程序和使用手册</li>
+   	 			<li class="l">故障诊断</li>
+   	 			<li class="l">联络方式</li>	
+   	 		</ul>
+   	 		<ul>
+   	 			<li class="aboutp">资源</li>
+   	 			<li class="l">产品注册</li>
+   	 			<li class="l">Predator掠夺者</li>
+   	 			<li class="l">Next@Acer</li>
+   	 			<li class="l">购买地点</li>
+   	 			<li class="l">软件</li>
+   	 			<li class="l">办公</li>
+   	 			<li class="l">Windows 10升级服务</li>
+   	 		</ul>
+   	 		<ul>
+   	 			<li class="aboutp">法律声明</li>
+   	 			<li class="l">隐私权规范</li>
+   	 			<li class="l">法律声明</li>
+   	 		</ul>
+   	 		<div class="imdiv">
+   	 			<p class="imdivp1">订阅电子简报</p>
+   	 			<input class="inp1" type="text" placeholder="用电子邮件登录...">&nbsp&nbsp
+   	 			<input  class="inp2" type="submit" value="注册"  >
+   	 			<p class="imdivp2">注册即表明我接受 Acer <a href="http://www.baidu.com">宏碁 隐私政策的条款。</a></p>
+   	 		</div>
+   	 		<img class="iii" src="images/sina.gif" alt="">
+   	 	</div>
+   	 	<div class="bottom">
+   	 		<div class="gshang">
+   	 			<img src="images/gshang.png" alt="">
+   	 			<p>© 2016 Acer Inc.</p>
+   	 			<p>此网页最好使用IE9 浏览器、谷歌浏览器、苹果浏览器和其他新式浏览器进行浏览。</p>
+   	 			<p>英特尔、英特尔标识、Intel Inside、英特尔酷睿和Core Inside是英特尔公司在美国和其他国家的商</p>
+   	 			<p>标。</p>
+   	 			<img  class="img1" src="images/logo-white.svg" alt="">
+   	 			<img  onmouseover="change1('img2','images/zg2.gif')" onmouseout="change1('img2','images/zg.gif')"id="img2" src="images/zg.gif" alt="">
+   	 		</div>
+   	 		<div></div>
+   	 	</div>
+    </div>
+    </body>
+</html>

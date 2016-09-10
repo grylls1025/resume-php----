@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        *{margin: 0;padding: 0;border: 0;font-family: 宋体;font-size: 13px;}
+        li{list-style: none;}
+        a{text-decoration: none;color: white;}
+        .big{width: 999px;height: 1224px;font-size: 13px;margin: auto;}
+        .b1-h1{width: 74px;height: 25px;line-height: 25px;font-size: 15px;float: left;margin-top: 21px;margin-left: 4px;}
+        .b1d{width: 249.25px;height: 197px;float: left;font-size: 15px;font-family: 微软雅黑;}
+        .b1d ul{margin-left: 50px;margin-top: 60px;padding-left: 10px;border-left:2px solid white;}
+        .b1d li{height: 22px;line-height: 22px;}
+        .boim1{margin-left: 27px;margin-top: 27px;float: left;}
+        .bottom-2{color: white;}
+        .bottom{font-size:14px;}
+        /*top*/
+		.top{width: 999px;height: 481px;color: white;}
+		.top-1{width: 999px;height: 35px;background-color: #333e7c;}
+		.top-1 .ul1{float: left;}
+		.top-1 .ul2{float:right;}
+		.top-1 li{float: left;height: 18px;line-height: 18px;}
+		.top-1 .li1{width: 97px;margin:12px 20px 5px 20px;border-right: 2px solid white;}
+		.top-1 .li2{width: 72px;margin:12px 16px 5px 0px;font-weight: bolder;font-family: Vrinda;}
+		.top-1 .li3{width: 72px;margin:12px 16px 5px 0px;border-right: 2px solid white;}
+		.top-1 .li4{width: 72px;margin:12px 16px 5px 0px;border-right: 2px solid white;}
+		.top-1 .li5{width: 72px;margin:12px 0px 5px 0px;}
+		.top-2{width: 999px;height: 100px;background-color: #518de3;}
+		.top-2 .img1{margin:28px 0 18px 38px;}
+		.top-2 .img2{float: right;margin-right: 0;margin-top: 28px;}
+		.top-3{width: 999px;height: 50px;background-color: #4880d5;}
+		.top-3 li{width: 124px;height: 50px;line-height: 50px;text-align: center;float: left;font-weight: bold;}
+		.top-3 .li1{ height: 20px;line-height: 20px;margin :15px 0;border-right: 2px solid #2eb3a6;}
+		.top-4{width: 999px;height: 296px;}
+		.bottom-1{width: 999px;height: 197px;background-color: #dcdcdc;}
+		.bottom-2{width: 999px;height: 102px;background-color: #4880d5;}
+		.center{width: 999px;height: 444px;color: black;background-color: white;}
+		.center-1{float: left;width: 298px;height: 400px;margin:22px 0px 22px 28px;}
+		.center-2{float: left;width: 298px;height: 400px;margin:22px 0px 22px 43px;}
+		.center-3{float: left;width: 330.5px;height: 444px;}
+		.center-1 .s{width: 298px;height: 37px;line-height: 37px;border-bottom:1px solid #4880d5;}
+		
+		.c3li{padding-left: 15px;}
+		.c3li-{padding-left:15px;color: red;}
+		.span1{float: left;width: 6px;height: 14px;background-color:#808080;margin:11.5px 0;}
+		.span2{float: left;width: 84px;height: 14px;text-align: center;color:#acacac;}
+		.span3{float: left;width: 6px;height: 14px;background-color: #4880d5;margin:11.5px 0;}
+		.span4{float: left;width: 84px;height: 14px;text-align: center;color:black;}
+		.center-1 .a1{float: right;width: 60px;height: 14px;text-align: center;}
+		.center img{margin:19px 0 0 0;}
+		.center .x{width: 298px;height: 180px;border-bottom: 4px solid #4880d5;}
+		.center li{width: 298px;height: 30px;line-height: 30px;}
+		.center-2 .s{width: 298px;height: 37px;line-height: 37px;border-bottom:1px solid #ed802d;}
+		.span6{float: left;width: 6px;height: 14px;background-color:#ed802d;margin:11.5px 0;}
+		.span7{float: left;width: 84px;height: 14px;text-align: center;color:black;}
+		.span8{float: left;width: 6px;height: 14px;background-color: #808080;margin:11.5px 0;}
+		.span9{float: left;width: 84px;height: 14px;text-align: center;color:#acacac;}
+		.center-2 .a1{float: right;width: 60px;height: 14px;text-align: center;color:#ed802d; }
+		.center-2 .x{width: 298px;height: 180px;border-bottom: 4px solid #ed802d;}
+		.shang{width: 270px;height: 130px;background-color: #dcdcdc;margin:34px 29px 5px 43px;}
+		.shang ul{float: left;width: 90px;height: 94px;}
+		.zhong{width: 270px;height: 120px;background-color: #dcdcdc;margin:0 29px 5px 43px;}
+		.zhong ul{float: left;width: 90px;height: 84px;}
+		.xia{width: 270px;height: 136px;background-color: #dcdcdc;margin:0 29px 5px 43px;}
+		.xia ul{float: left;width: 90px;height: 99px;}
+		.xiao{width: 22px;height: 25px;margin-left: 40px;margin-top: 21px;background: url(../images/江大首页/xiaotubiao.gif) no-repeat 0 0;float: left;}
+		.xiao1{width: 22px;height: 25px;margin-left: 40px;margin-top: 21px;background: url(../images/江大首页/xiaotubiao.gif) no-repeat -21px 0;float: left;}
+		.xiao2{width: 22px;height: 25px;margin-left: 40px;margin-top: 21px;background: url(../images/江大首页/xiaotubiao.gif) no-repeat -42px 0;float: left;}
+		.xiao3{width: 22px;height: 25px;margin-left: 40px;margin-top: 21px;background: url(../images/江大首页/xiaotubiao.gif) no-repeat -63px 0;float: left;}
+		.p1{width: 255px;height: 35px;line-height: 35px;padding-left: 15px;color: #4880d5;font-weight: bold;border-bottom: 1px solid #ededed;}
+		.last{margin-left: 25px;float:left;margin-top: 30px;}
+		.last1{width: 174px;height: 102px;float: right;}
+		.lastim{margin-top: 30px;margin-left: 40px;}
+        .li111{position: relative; left:0; top:0;}
+        #ul01,#ul02,#ul03,#ul04,#ul05,#ul06,#ul07{position: absolute;left:0;top:50px; display:none; }
+        #ul01 li{height: 28px;line-height: 28px;background-color: #ed8232;}
+        .top-3 a:link{color: white;}
+       /*.top-3 a:visited{color: white;}*/
+        .top-3 a:hover{color: white;}
+        /*.top-3 a:active{color: white;}*/
+        .li111:hover{background-color:#ed8232; }
+        .li111 li{height: 28px;line-height: 28px;background-color: #ed8232;}
+        #ul01 li:hover{background:#de4718 url(../images/江大首页/sanjiao.gif) no-repeat right;}
+        #ul02 li:hover{background:#de4718 url(../images/江大首页/sanjiao.gif) no-repeat right;}
+        #ul03 li:hover{background:#de4718 url(../images/江大首页/sanjiao.gif) no-repeat right;}
+        #ul04 li:hover{background:#de4718 url(../images/江大首页/sanjiao.gif) no-repeat right;}
+        #ul05 li:hover{background:#de4718 url(../images/江大首页/sanjiao.gif) no-repeat right;}
+        #ul06 li:hover{background:#de4718 url(../images/江大首页/sanjiao.gif) no-repeat right;}
+        #ul07 li:hover{background:#de4718 url(../images/江大首页/sanjiao.gif) no-repeat right;}
+
+   
+
+        </style>
+        <script>
+            //window.onload=fuction(){ }
+            
+            function change(a,b){document.getElementById(a).style.display=b;}
+           
+           
+        </script>
+             
+
+
+    </head>
+    <body>
+    <div class="big">
+    	<div class="top">
+    	<div class="top-1">
+    		<div class="ul1">
+    		<ul >
+    			<li class="li1">旧版中文网页</li>
+    			<li class="li2">English</li>
+        	</ul>
+        	</div>
+        	<div class="ul2">
+        	<ul >
+        		<li class="li3">手机门户</li>
+        		<li class="li4">江大微博</li>
+        		<li class="li5">江大微信</li>
+        	</ul>	
+        	</div>
+    	</div>
+    	<div class="top-2">
+    		<img class="img1" src="../images/江大首页/logo.gif" alt="">
+    		<img class="img2" src="../images/江大首页/xiaoxun.png" alt="">
+    	</div>
+    	<div class="top-3">
+    		<ul>
+    			<li class="li1">首页</li>
+    			<li class="li111" onmouseover="change('ul01','block')" onmouseout="change('ul01','none')">学校概况
+                <ul id="ul01" >
+                    <li><a href="">校长致辞</a></li>
+                    <li><a href="">学校章程</a></li>
+                    <li><a href="">学校简介</a></li>
+                    <li><a href="">学校领导</a></li>
+                    <li><a href="">校史沿革</a></li>
+                    <li><a href="">校园导游</a></li>
+                </ul>
+                </li>
+    			<li class="li111" onmouseover="change('ul02','block')" onmouseout="change('ul02','none')">学院部门
+                <ul id="ul02">
+                   <li><a href="">党群部门</a></li>
+                    <li><a href="">行政部门</a></li>
+                    <li><a href="">学院、科研机构</a></li>
+                    <li><a href="">直属单位</a></li>
+                </ul>
+                </li>
+    			<li class="li111" onmouseover="change('ul03','block')" onmouseout="change('ul03','none')">教师队伍
+                <ul id="ul03">
+                   <li><a href="">人才引进</a></li>
+                    <li><a href="">博导一览</a></li>
+                    <li><a href="">教授风采</a></li>
+                </ul>
+                </li>
+    			<li class="li111" onmouseover="change('ul04','block')" onmouseout="change('ul04','none')">学科建设
+                <ul id="ul04">
+                   <li><a href="">博士后流动站</a></li>
+                    <li><a href="">一级学科博士</a></li>
+                    <li><a href="">一级学科硕士</a></li>
+                    <li><a href="">博士学位授权</a></li>
+                    <li><a href="">硕士学位授权</a></li>
+                    <li><a href="">重点学科一览</a></li>
+                    <li><a href="">MBA（工商管理）</a></li>
+                </ul>
+                </li>
+    			<li class="li111" onmouseover="change('ul05','block')" onmouseout="change('ul05','none')">招生就业
+                 <ul id="ul05">
+                   <li><a href="">招生联系</a></li>
+                    <li><a href="">本科生招生</a></li>
+                    <li><a href="">研究生招生</a></li>
+                    <li><a href="">MBA招生</a></li>
+                    <li><a href="">MPA招生</a></li>
+                    <li><a href="">MPAcc招生</a></li>
+                    <li><a href="">留学生招生</a></li>
+                    <li><a href="">成教招生</a></li>
+                    <li><a href="">就业信息</a></li>
+                    <li><a href="">创业教育</a></li>
+                </ul>
+                </li>
+    			<li class="li111" onmouseover="change('ul06','block')" onmouseout="change('ul06','none')">人才培养
+                <ul id="ul06">
+                    <li><a href="">本科生教育</a></li>
+                    <li><a href="">研究生教育</a></li>
+                    <li><a href="">成人教育</a></li>
+                    <li><a href="">来华留学生教育</a></li>
+                </ul>
+                </li >
+    			<li class="li111" onmouseover="change('ul07','block')" onmouseout="change('ul07','none')">科学研究
+                <ul id="ul07">
+                    <li><a href="">科学概况</a></li>
+                    <li><a href="">科技服务</a></li>
+                    <li><a href="">科研机构</a></li>
+                    <li><a href="">成果专利</a></li>
+                    <li><a href="">科技产业</a></li>
+                    <li><a href="">江大学报</a></li>
+                </ul>
+                </li>
+    		</ul>
+    	</div>
+    	<div class="top-4">
+    		<img src="../images/江大首页/datu.gif" alt="">
+    	</div>
+    </div>
+    <div class="center">
+    	<div class="center-1">
+    		<div class="s"><span class="span1"></span><span class="span2">学校要闻</span><span class="span3"></span><span class="span4">媒体江大</span><span class="span55"><a class="a1" href="">more>></a></span></div>
+    		<div class="z"><img src="../images/江大首页/xiaotu1.gif" alt=""></div>
+    		<div class="x">
+    		<ul>
+    			<li>新华日报：高等教育，供给册改革促发展...</li>
+    			<li>中国教育报："农机精神"是镌刻在大地...</li>
+    			<li>中国教育报：农机智能化人才培养孤峰突...</li>
+    			<li>新华日报：高水平开放，增创竞争新优势...</li>
+    			<li>新华日报：人才政策升级，引领发展转型...</li>
+    			<li>中国教育报：创业教育如何落地生根...</li>
+    		</ul>
+    		</div>
+    	</div>
+    	<div class="center-2">
+    		<div class="s"><span class="span6"></span><span class="span7">信息公告</span><span class="span8"></span><span class="span9">学术讲座</span><span class="span10"><a class="a1" href="">more>></a></span></div>
+    		<div class="z"><img src="../images/江大首页/xiaotu2.gif" alt=""></div>
+    		<div class="x">
+    		<ul>
+    			<li>新华日报：高等教育，供给册改革促发展...</li>
+    			<li>中国教育报："农机精神"是镌刻在大地...</li>
+    			<li>中国教育报：农机智能化人才培养孤峰突...</li>
+    			<li>新华日报：高水平开放，增创竞争新优势...</li>
+    			<li>新华日报：人才政策升级，引领发展转型...</li>
+    			<li>中国教育报：创业教育如何落地生根...</li>
+    		</ul>
+    		</div></div>
+    	<div class="center-3">
+    		<div class="shang">
+    			<p class="p1">校园文化</p>
+    			 <ul >
+    			    <li class="c3li-">新闻中心</li>
+    				<li class="c3li">群众路线</li>
+    				<li class="c3li">校史馆</li>
+    			 </ul>
+    		
+     			<ul >
+    				<li class="c3li">江帆网</li>
+    				<li class="c3li">党代会专题</li>
+    			</ul>
+    			<ul >
+    				<li class="c3li">核心价值观</li>
+    				<li class="c3li-">三严三实</li>
+    			</ul>
+    		</div>
+    		<div class="zhong">
+    			<p class="p1">校园信息</p>
+    			<ul>
+    			    <li class="c3li-">校内信息网</li>
+    				<li class="c3li">江大校历</li>
+    			 </ul>
+     			<ul >
+    				<li class="c3li">国际交流</li>
+    				<li class="c3li">招标信息</li>
+    			</ul>
+    			<ul >
+    				<li class="c3li">团学社区</li>
+    				<li class="c3li-">人才招聘</li>
+    			</ul>
+    		</div>
+    		<div class="xia">
+    			<p class="p1">公共服务</p>
+    			 <ul >
+    			    <li class="c3li-">信息门户</li>
+    				<li class="c3li">邮件服务</li>
+    				<li class="c3li">设备共享</li>
+    			 </ul>
+     			<ul >
+    				<li class="c3li">办公系统</li>
+    				<li class="c3li">后勤服务</li>
+    				<li class="c3li">网络服务</li>
+    			</ul>
+    			<ul >
+    				<li class="c3li">信息公开</li>
+    				<li class="c3li">图书资源</li>
+    				<li class="c3li">幼儿教育</li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+    <div class="bottom">
+    	<div class="bottom-1">
+    		<div class="b1d">
+    			<div class="xiao"></div><h1 class="b1-h1">考生/家长</h1>
+    			<ul >
+    				<li>学校简介</li>
+    				<li>本科招生</li>
+    				<li>研究生招生</li>
+    				<li>留学生招生</li>
+    				<li>继续教育招生</li>
+    			</ul>
+    		</div>
+    		<div class="b1d">
+    			<div class="xiao1"></div><h1 class="b1-h1">学生/校友</h1>
+    			<ul >
+    				<li>学校简介</li>
+    				<li>本科招生</li>
+    				<li>研究生招生</li>
+    				<li>留学生招生</li>
+    				<li>继续教育招生</li>
+    			</ul>
+    		</div>
+    		<div class="b1d">
+    			<div class="xiao2"></div><h1 class="b1-h1">教师/职工</h1>
+    			<ul>
+    				<li>学校简介</li>
+    				<li>本科招生</li>
+    				<li>研究生招生</li>
+    				<li>留学生招生</li>
+    				<li>继续教育招生</li>
+    			</ul>
+    		</div>
+    		<div class="b1d">
+    			<div class="xiao3"></div><h1 class="b1-h1">社会/访客</h1>
+    			<ul>
+    				<li>学校简介</li>
+    				<li>本科招生</li>
+    				<li>研究生招生</li>
+    				<li>留学生招生</li>
+    				<li>继续教育招生</li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="bottom-2">
+    		<img class="boim1" src="../images/江大首页/foot_logo.png" alt="">
+    		<div class="last">
+    		<p>地址：江苏省镇江市学府路301号  邮编：212013</p>
+    		<p>copyright©江苏大学版权所有 苏ICP备05071359号</p>
+    		</div>
+    		<div class="last1">
+    			<img class="lastim" src="../images/江大首页/foot.gif" alt="">
+    			<p> &nbsp;站点管理&nbsp;留言反馈</p>
+    		</div>
+    		
+    	</div>
+    </div>
+    </div>
+    
+
+    </body
+</html>

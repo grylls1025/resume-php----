@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style>
+    	body{background-color: #ccc;}
+		#time{
+            width: 350px;
+            height: 100px;
+            color: #25f;font-size:50px;
+            margin:200px auto 0;
+        }
+        p{
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        input{
+            width: 80px;
+            height: 30px;
+            font-size: 15px;
+            cursor: pointer;
+            border:1px solid #000;
+        }
+    </style>
+    <script>
+    window.onload=function(){
+    	function show(){
+    		var odate=new Date();
+	  	document.getElementById('time').innerHTML=odate.getHours()+'时'+odate.getMinutes()+'分'+odate.getSeconds()+'秒';
+    	}
+    	setInterval(show,1000);
+    	
+    }
+    </script>
+    <body>
+    <div id="time"></div>
+    <br><p>(时钟显示)<a href="http://localhost/resume/domo.php" ><br><br><input type="button" value="返回"></a></p>
+    </body>
+</html>

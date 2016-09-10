@@ -1,0 +1,77 @@
+body{
+    overflow: hidden;
+}
+#login{
+    width:auto;
+    height:495px;
+    font-size:15px;
+    color: #EFEFEF;
+    overflow: hidden;
+
+
+}
+#login dl{
+    width: 50%;
+    height: 315px;
+    margin:90px auto;
+    display: none;
+    border-radius: 6px;
+    background: rgba(0,0,0,.4);
+}
+#login dl dt{
+    text-align: center;
+    padding:20px 0 30px;
+    color: #EFEFEF;
+    font-size: 1.2rem;
+}
+#login dl dd{
+    padding:10px 0;
+}
+#login dl dd span{
+    display: inline-block;
+    width: 80px;
+    /*text-align: justify;*/
+    -moz-text-align-last:justify;/*ff*/
+    padding: 0 15px 0 145px;
+}
+#login dl dd .text{
+    height: 30px;
+    width:200px;
+    border-radius:5px;
+    background-color:#EFEFEF;
+    color: #000;
+    text-indent:5px;
+}
+#login dl dd .submit{
+    width: 200px;
+    height: 35px;
+    margin:20px 0 0 240px;
+    border-radius: 5px;
+    background-color: #0ae;
+    color: #EFEFEF;
+    text-align: center;
+    cursor:pointer;
+    opacity:0.9
+}
+#login dl dd .submit:hover{
+    opacity:1;
+}
+#login dl dd .yzm{
+    height: 30px;
+    width:120px;
+    border-radius:5px;
+    background-color:#EFEFEF;
+    color: #000;
+    text-indent:5px;
+    margin-right:10px;
+    overflow: hidden;
+}
+#login dl dd img{
+    vertical-align: middle;
+}
+#login dl dd a{
+    text-decoration: underline;
+    font-size: 12px;
+    color: #fff;
+    margin-left:30px;
+}

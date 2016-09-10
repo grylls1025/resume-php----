@@ -1,0 +1,131 @@
+/**
+ * Created by PhpStorm.
+ * User: 禹轩1025
+ * Date: 2016/8/28
+ * Time: 18:42
+ */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    /*font-family: "Microsoft YaHei";*/
+    /*color: #EFEFEF;*/
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+body{
+    background:url(../images/p2.jpg) ;
+}
+body#b1{
+    background:url(../images/c1.jpg) ;
+    background-size: cover;
+}
+#head{
+    height:80px;
+    /*background-color: #22C3AA;*/
+    font-size:1.1rem;
+    overflow: hidden;
+    /*border-bottom: 1px solid #acd;*/
+    background:rgba(0,0,0,.3);
+}
+#head #nav{
+    width1700px;
+    height:80px;
+    line-height:80px;
+    /*background-color: #22C3AA;*/
+    list-style-type: none;
+    float:right;
+    /*padding:20px 0 0 0;*/
+    font-weight:bold;
+
+}
+#head #nav li{
+    float:left;
+    width: auto;
+    margin-right:40px;
+
+}
+#head #nav li.fz:hover{
+    transform:rotateY(360deg);
+    -webkit-transform:rotateY(360deg); /* Safari and Chrome */
+    -moz-transform:rotateY(360deg); /* Firefox */
+    transition:transform 1s;
+}
+
+#head #nav li #yonghu {
+    text-decoration: underline;
+    font-size: 82%;
+
+
+}
+#head #nav li #yonghu1{
+    text-decoration: none;
+    font-size: 82%;
+
+
+}
+#head #nav li #bizhi{
+    text-decoration: underline;
+    font-size: 82%;
+    margin-right: 0;
+    cursor:pointer;
+
+}
+
+#head #nav li #bizhi:active{
+    color:blue;
+}
+
+#head #smallface{
+    width: 40px;
+    height: 40px;
+    margin:20px 0 0 40px;
+    float:left;
+    border-radius:20%;
+    background:url(../images/smallface.jpg);
+    background-size:cover;
+
+}
+#head p{
+    float:left;
+    height: 18px;
+    line-height:18px;
+    margin:32px 0 0 20px;
+    font-size:80%;
+    text-indent: 20px;
+    border-left:2px solid #EFEFEF;
+    padding-bottom:2px;
+}
+#head p a{
+
+    text-decoration:none;
+}
+
+#foot{
+    height:60px;
+    /*background-color: #acd;*/
+    background:rgba(0,0,0,.3);
+}
+
+#foot h5{
+    width: 100%;
+    height:20px;
+    line-height:20px;
+    margin:0 auto;
+    /*background-color: #22C3AA;*/
+    text-align: center;
+    color: #EFEFEF;
+    padding:5px 0 ;
+    /*border-top:2px solid #acd;*/
+
+}
+
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            animation:myfirst 8s infinite alternate;
+            -moz-animation:myfirst 8s infinite alternate;
+            -webkit-animation:myfirst 8s infinite alternate;
+            -o-animation:myfirst 8s infinite alternate;
+            margin: 30px auto;
+            background: blue;
+        }
+        p{
+            width: 300px;
+            height: 300px;  
+            margin: 30px auto;
+        }
+        input{
+            width: 80px;
+            height: 30px;
+            font-size: 15px;
+            cursor: pointer;
+            border:1px solid #000;
+        }
+        @-moz-keyframes myfirst{
+            0%   {background: red;}
+            25%  {background: yellow;}
+            50%  {background: blue;}
+            100% {background: green;}
+        }
+        @keyframes myfirst{
+            0%   {background: red;}
+            25%  {background: yellow;}
+            50%  {background: blue;}
+            100% {background: green;}
+        }
+        @-webkit-keyframes myfirst{
+            0%   {background: red;}
+            25%  {background: yellow;}
+            50%  {background: blue;}
+            100% {background: green;}
+        }
+        @-o-keyframes myfirst{
+            0%   {background: red;}
+            25%  {background: yellow;}
+            50%  {background: blue;}
+            100% {background: green;}
+        }
+    </style>
+    <body>
+    <div>
+    </div>
+    <p>(控制CSS实现颜色动画切换效果)<br><br><a href="http://localhost/resume/domo.php" ><input type="button" value="返回"></a></p>
+    </body>
+</html>

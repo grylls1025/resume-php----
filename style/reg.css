@@ -1,0 +1,74 @@
+body{
+    overflow: hidden;
+}
+#register{
+    width:auto;
+    height:495px;
+    font-size:15px;
+    color: #efefef;
+
+    overflow:hidden;
+}
+#register dl{
+    width: 50%;
+    margin:50px auto;
+    height: 100%;
+    display: none;
+    border-radius:6px;
+    background: rgba(0,0,0,.3);
+}
+#register dl dt{
+    text-align: center;
+    padding:20px 0 30px;
+    color: #EFEFEF;
+    font-size: 1.2rem;
+}
+#register dl dd{
+    padding:10px 0;
+
+}
+#register dl dd span{
+    display: inline-block;
+    width: 80px;
+    /*text-align: justify;*/
+    -moz-text-align-last:justify;/*ff*/
+    padding: 0 15px 0 145px;
+}
+#register dl dd .text{
+    height: 30px;
+    width:200px;
+    border-radius:5px;
+    background-color:#EFEFEF;
+    text-indent:5px;
+
+    color:black;
+}
+#register dl dd .submit{
+    width: 200px;
+    height: 35px;
+    margin:20px 0 0 240px;
+    border-radius: 5px;
+    background-color: #0ae;
+    color: #fff;
+    text-align: center;
+    cursor:pointer;
+    opacity:0.8;
+}
+#register dl dd .submit:hover{
+    opacity:1;
+}
+#register dl dd .yzm{
+    height: 30px;
+    width:120px;
+    border-radius:5px;
+    background-color:#EFEFEF;
+    color: #000     ;
+    text-indent:5px;
+    margin-right:10px;
+    overflow: hidden;
+}
+#register dl dd img{
+    vertical-align: middle;
+}
+
+

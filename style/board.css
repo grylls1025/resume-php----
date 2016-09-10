@@ -1,0 +1,101 @@
+body #b1{
+    background:url(../images/c1.jpg) ;
+    background-size: cover;
+}
+#board{
+    width:auto;
+    height: 2000px;
+    overflow:hidden;
+}
+#board1{
+    width: 50%;
+    height: 90%;
+    background: rgba(0,0,0,.4);
+    margin: 3% auto;
+    border-radius:6px;
+    overflow: hidden;
+    /*color:black;*/
+    display: none;
+
+
+}
+#board1 h4{
+    text-indent: 70px;
+    height:60px;
+    line-height: 60px;
+    width: 80%;
+    color:#fff
+}
+#board1 textarea{
+    margin:0 0 0 60px;
+    resize: none;
+    border-radius:6px;
+    border:1px solid #ACD;
+    font:14px/1.5 aria;
+    height:100px;
+    padding:3px 0 3px 10px;
+    overflow: hidden;
+    opacity: 0.8;
+}
+#board1 #write{
+    margin:10px 0 0 480px;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #627D80;
+    color: #fff;
+    text-align: center;
+    cursor:pointer;
+    opacity:0.7
+
+}
+#board1 #write:hover{
+    opacity: 1;
+}
+#board1 #content{
+    width: 550px;
+    height: auto;
+    margin:100px auto 0;
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius:6px;
+}
+#board1 #content #grey{
+    width: 100%;
+    height: 30px;
+    background-color: #627D80;
+    opacity: 0.7;
+}
+#board1 #content div.small{
+    width: 510px;
+    height: 90px;
+    border-bottom:2px dotted #acd;
+    padding:10px 20px;
+    font: 14px/1.5 aria;
+}
+#board1 #content div .lp{
+    width: 140px;
+    height: 90px;
+
+    float:left;
+}
+#board1 #content div .rp{
+    width: 370px;
+    height:80px;
+    float:right;
+    padding-top: 10px;
+}
+#board1 #content div .lp .div1{
+    width: 110px;
+    height: 60px;
+    line-height:40px;
+    color:#2b4a78;
+
+}
+#board1 #content div .lp .div2{
+    width: 110px;
+    height: 30px;
+    color:grey;
+    font-size:12px;
+}
+

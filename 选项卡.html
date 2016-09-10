@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+		input
+		{
+			background-color:white;width:80px;margin-top:50px;
+			width: 80px;
+			height: 30px;
+			font-size: 15px;
+			cursor: pointer;
+			border:1px solid #000;
+		}
+		input#left{
+			margin-left:540px;
+		}
+		.active
+		{
+			background-color:#bcd;
+			opacity: 0.5;
+		}
+		div
+		{
+			margin:20px auto; width: 250px;height:300px;background-color: #ccc;display:none;
+		}
+		div#d1{
+			background-color: #aaccdd;
+			display: block;
+		}
+		div#d2{
+			background-color: #ebc;
+		}
+		div#d3{
+				 background-color: greenyellow;
+			 }
+		p{
+			width: 500px;
+			height: 300px;
+			margin: 30px auto;
+			margin-left: 540px;
+		}
+		</style>
+    <script>
+    window.onload=function()
+    {
+    	var inp=document.getElementsByTagName('input');
+    	var de=document.getElementsByTagName('div');
+ 			   	
+    	for(var i=0;i<3;i++)
+    	{
+    		inp[i].index=i;
+    		inp[i].onclick=function()
+    		{
+    			for(var i=0;i<3;i++)
+    			{
+    				inp[i].className="";
+    				de[i].style.display='none';
+    			}
+    			de[this.index].style.display="block";
+    			this.className='active';
+    		}
+    	}	
+    }
+    	
+    </script>
+    </head>
+    <body>
+   	<input id="left" type="button" value="1">
+   	<input type="button" value="2">
+   	<input type="button" value="3">
+   	<div id="d1">第一个页面<br><br><br>hello hello hello</div>
+   	<div id="d2">第二个页面<br><br><br>world world world</div>
+   	<div id="d3">第三个页面<br><br><br>O(∩_∩)O  O(∩_∩)O</div>
+	<br><p>(选项卡效果)<a href="http://localhost/resume/domo.php" ><br><input  type="button" value="返回"></a></p>
+    </body>
+<ml>

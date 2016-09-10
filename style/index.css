@@ -1,0 +1,92 @@
+body{
+    overflow: hidden;
+}
+#imform{
+    width:auto;
+    height:495px;
+    /*background-color: #22C3AA;*/
+    overflow:hidden;
+
+}
+/*头像*/
+#face0{
+    width: 60%;
+    height:85%;
+    margin:400px auto;
+    overflow: hidden;
+
+}
+/*#face0:hover{*/
+    /*background:rgba(0,0,0,.3);*/
+/*}*/
+#biv{
+;
+    width: 160px;
+    height:160px;
+    border-radius: 50%;
+    margin:20px auto 0 ;
+    position: relative;
+    transition:box-shadow .5s;
+    box-shadow: 0 0 5px 5px #acd;
+}
+#biv:hover{
+    box-shadow: 0 0 10px 10px #acd;
+    /*transition:box-shadow 1s;*/
+}
+#face{
+    width: 160px;
+    height:160px;
+    border-radius: 50%;
+    background-image: url(../images/face.jpg);
+    background-size:cover ;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+#face1{
+    width: 160px;
+    height:160px;
+    border-radius: 50%;
+    background-image: url(../images/pb.jpg);
+    background-size:cover ;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#face0 h3{
+    text-align:center;
+    color:#fff;
+    margin:20px auto;
+    padding-bottom:10px;
+    border-bottom:2px solid #acd;
+    width: 0;
+    height: 30px;
+
+}
+#face0 h5{
+    text-align:center;
+    color:#fff;
+    margin-bottom:15px;
+    /*opacity: 0;*/
+    display: none;
+    font-weight: bolder;
+
+}
+#face0 h5 a{
+    color:#fff;
+    text-decoration:underline;
+}
+#face0 h5 a:link{
+    color:#fff;
+}
+#face0 h5 a:visited {
+    color: #fff;
+}
+#face0 h5 a:hover{
+    color:#fff;
+    font-size:110%;
+}
+#face0 h5 a:active{
+    color:#AAA;
+}

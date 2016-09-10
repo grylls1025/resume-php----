@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style>
+	#odiv{width: 150px;height:150px;background-color:#abd;position:absolute;left:20px;}
+    p{
+        width: 300px;
+        height: 300px;
+        margin: 200px 0 0 30px; ;
+    }
+    #obun{
+
+        margin:0 0 10px 10px;;
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+        cursor: pointer;
+        border:1px solid #000;
+    }
+        input{
+            width: 80px;
+            height: 30px;
+            font-size: 15px;
+            cursor: pointer;
+            border:1px solid #000;
+        }
+    </style>
+    <script>
+    onload=function()
+    {
+    	var odiv=document.getElementById("odiv");
+    	var obun=document.getElementById("obun");
+    	var obun1=document.getElementById("obun1");
+        var i=0;
+    	obun.onclick=function()
+    	{
+
+         if(i==1){
+             return false;
+         }
+    	timer=setInterval(function(){odiv.style.left=odiv.offsetLeft+5+'px';},30);
+    	i=1;
+        }
+    	obun1.onclick=function()
+    	{
+    		clearInterval(timer);
+            i=0;
+    	}
+
+	}
+    </script>
+    <body>
+    <input type="button" id="obun" value="右移">
+    <input type="button" id="obun1" value="停止">
+    <div id="odiv"></div>
+    <br><p>(方块右移)<a href="http://localhost/resume/domo.php" ><br><br><input id="i" type="button" value="返回"></a></p>
+    </body>
+</html>

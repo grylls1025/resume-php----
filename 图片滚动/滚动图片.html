@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style>
+    *{border:0;margin:0;padding:0;}
+	li{list-style-type:none;float: left;width: 250px;height: 250px;}
+	div#s{background-color:#abc; position:relative;overflow: hidden;width: 1000px;height:250px ;}
+	div#d{
+		width: 1000px;
+		height: 250px;
+		border:20px solid #acd;
+		border-radius: 10px;
+		margin:50px auto;
+	}
+	ul{position:absolute;width: 2000px;height: 250px;overflow: hidden;}
+	p{
+		width: 300px;
+		height: 300px;
+		margin: 50px 0 0 630px; ;
+	}
+	input{
+		width: 80px;
+		height: 30px;
+		font-size: 15px;
+		cursor: pointer;
+		border:1px solid #000;
+	}
+    </style>
+    <script>
+    	onload=function()
+    	{
+    		var oul=document.getElementsByTagName('ul')[0];
+    		var oli=document.getElementsByTagName('li');
+    		var odiv=document.getElementsByTagName('div')[0];
+    		
+    		oul.innerHTML+=oul.innerHTML;
+    		timer=setInterval(function()
+    		{
+    			oul.style.left=oul.offsetLeft-5+'px';
+    			if(oul.offsetLeft<-oul.offsetWidth/2)
+    			{
+    				oul.style.left='0px';
+    			}
+    		},30);
+    		oul.onmouseover=function(){
+    			clearInterval(timer);
+    		}
+    		oul.onmouseout=function(){
+    		timer=setInterval(function()
+    		{
+    			oul.style.left=oul.offsetLeft-5+'px';
+    			if(oul.offsetLeft<-oul.offsetWidth/2)
+    			{
+    				oul.style.left='0px';
+    			}
+    		},30);
+
+    		}
+    	}
+    </script>
+    <body>
+   
+    <div id="d">
+		<div id="s">
+			<ul>
+				<li ><img src="image/1.gif" alt=""></li>
+				<li><img src="image/2.gif" alt=""></li>
+				<li><img src="image/3.gif" alt=""></li>
+				<li><img src="image/4.gif" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<br><p>(图片滚动)<a href="http://localhost/resume/domo.php" ><br><br><input id="i" type="button" value="返回"></a></p>
+    </body>
+</html>
